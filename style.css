@@ -337,27 +337,28 @@ main {
 /* line 281, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonials {
   box-sizing: border-box;
-  padding: 0 1.25rem;
-  padding-top: 3rem;
+  padding: 3.8rem 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   width: 100%;
-  gap: 3.5rem;
+  gap: 3.05rem;
 }
 
-/* line 292, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 291, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonial {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  gap: 1.7rem;
+  gap: 1.8rem;
 }
 
-/* line 299, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 298, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonials-title {
+  margin: 0;
+  padding-bottom: 1rem;
   font-family: var(--fraunces-font);
   font-weight: 900;
   text-transform: uppercase;
@@ -365,10 +366,9 @@ main {
   color: var(--grayish-blue);
   letter-spacing: 0.22rem;
   word-spacing: 0.08rem;
-  margin-bottom: 0;
 }
 
-/* line 309, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 310, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonial-image-container {
   overflow: hidden;
   width: 4rem;
@@ -378,13 +378,13 @@ main {
   display: inline-block;
 }
 
-/* line 317, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 318, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonials-profile-image {
   width: 100%;
   height: 100%;
 }
 
-/* line 321, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 322, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonial-text {
   letter-spacing: 0px;
   margin: 0;
@@ -395,7 +395,7 @@ main {
   line-height: 1.7rem;
 }
 
-/* line 330, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 331, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonial-client-name {
   font-family: var(--fraunces-font);
   font-weight: 900;
@@ -405,14 +405,14 @@ main {
   color: var(--very-dark-desaturated-blue);
 }
 
-/* line 338, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 339, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .testimonial-client-occupation {
   font-family: var(--barlow-font);
   font-size: 0.75rem;
   color: var(--grayish-blue);
 }
 
-/* line 347, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 348, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .image-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -422,7 +422,7 @@ main {
   min-height: 20.88rem;
 }
 
-/* line 354, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 355, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .image-grid .image-grid-item {
   display: block;
   width: 100%;
@@ -432,22 +432,22 @@ main {
   background-size: cover;
 }
 
-/* line 364, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 365, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .milk {
   background-image: url(images/mobile/image-gallery-milkbottles.jpg);
 }
 
-/* line 368, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 369, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .orange {
   background-image: url(images/mobile/image-gallery-orange.jpg);
 }
 
-/* line 372, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 373, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .cone {
   background-image: url(images/mobile/image-gallery-cone.jpg);
 }
 
-/* line 376, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
+/* line 377, ../DEV/sunnyside-agency-landing-page-main/styles/style.scss */
 .sugar {
   background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
 }
