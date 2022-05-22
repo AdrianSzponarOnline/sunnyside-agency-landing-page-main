@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+:root {
+    --barlow-font: "Barlow", sans-serif;
+    --fraunces-font: "Fraunces", serif;
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    /*graphic design text*/
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    /*photography text*/
+    --dark-blue: hsl(198, 62%, 26%);
+    /*footer*/
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --header-bg: #3ebfff;
+    --footer-bg: #8ed0c4;
+    --container-bg: #fffbf8;
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-drak-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+html {
+    font-size: 18px;
+}
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding:0;
+    margin: 0;
+}
+header {
+    background-image:url("images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    height: 29.8rem;
+    max-height: 100%;
+    text-align: center;
+}
+nav {
+    position: relative;
+    padding: 1.7rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-container {
+    display: none;
+}
+
+header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--fraunces-font);
+    font-weight: 900;
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+    color: var(--white);
+    padding: 2.85rem 0;
+    text-align: center;    
+}
+.arrow-down {
+    margin-bottom: 1rem;
+}
+.fa-solid {
+    color: var(--white);
+    font-size: 1.6rem;
+    display: inline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-shown {
+    background-color: var(--white);
+    box-sizing: border-box;
+    width: calc(100% - 2.5rem);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, 20%);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.menu-item {
+    font-family: var(--barlow-font);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--dark-grayish-blue)
+}
+
+.menu-item-cta {
+    font-size: 0.85rem;
+    letter-spacing: 0.7px;
+    color: var(--very-dark-desaturated-blue);
+    font-family: var(--fraunces-font);
+    font-weight: 900;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.menu-shown::after {
+    content: "";
+    position: absolute;
+    margin-top: -4.5rem;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    transform: translate(0, 70%);
+    background-color: transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    border-right: 40px solid var(--white);
+  }
+main {
+    width: 100%;
+}
+
+.transform-section-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+.transform-image-container {
+    background-image: url("images/mobile/image-transform.jpg");
+    width:100%;
+    background-color: var(--yellow);
+    margin: auto;
+    min-height: 17.333rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.transform-description-container {
+    padding: 3.6rem 1.25rem;
+}
+.transform-description-container h2{
+    font-family: var(--fraunces-font);
+    margin:0;
+    padding:0;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.transform-description{
+    margin:0;
+    padding-top: 1.3rem;
+    font-size: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+    line-height: 1.65rem;
+}
+.transform-description-container a{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 0.85rem;
+    font-weight: 900;
+    font-family: var(--fraunces-font);
+    text-decoration: none;
+    margin-top:2rem;
+    display: inline-block;
+}
+.transform-description-container a::after{
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    left:0;
+    content:'';
+    width: 100%;
+    height: 8px;
+    display: inline-block;
+    background-color: hsla(51, 100%, 67%, 0.5);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.transform-description-container a:hover::after,
+.transform-description-container a:active::after
+{
+    background-color: hsl(51, 100%, 50%);
+}
+
+
+#slogan-2 .transform-description-container a::after{
+    background-color: hsla(8, 91%, 79%, 0.486);
+}
+#slogan-2 .transform-description-container a:hover::after,
+#slogan-2 .transform-description-container a:active::after
+{
+    background-color: hsl(7, 99%, 70%);
+}
+
+#slogan-2 .transform-image-container {
+    background-color: var(--container-bg);
+    background-image: url("images/mobile/image-stand-out.jpg");
+}
+.offer-section {
+    display: flex;
+    flex-direction: column;
+}
+.offer-section-container {
+    display: flex;
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 33.33rem;
+    width: 100%;
+    padding: 0rem 1.25rem 3.1rem;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: center;
+}
+.offer-section-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.offer-container-title {
+    font-family: var(--fraunces-font);
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    margin:0;
+    padding:0;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--dark-desaturated-cyan);
+
+}
+.offer-description{
+    padding-top: 1.7rem;
+    letter-spacing: -0.3px;
+    word-spacing: 0.9px;
+    margin:0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: "Barlow", sans-serif;
+    color: var(--dark-desaturated-cyan);
+}
+#offer-2 {
+    background-image: url("images/mobile/image-photography.jpg");
+}
+#offer-2 .offer-container-title,
+#offer-2 .offer-description {
+    color: var(--dark-blue);
+    opacity: 1;
+}
+.testimonials {
+    box-sizing: border-box;
+    padding: 0 1.25rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 3.5rem;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.7rem;
+}
+.testimonials-title {
+    font-family: var(--fraunces-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--grayish-blue);
+    letter-spacing: 0.22rem;
+    word-spacing: 0.08rem;
+    margin-bottom: 0;
+}
+.testimonial-image-container {
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    border-radius:50%;
+    margin: 0 auto;
+    display: inline-block;
+}
+.testimonials-profile-image {
+    width: 100%;
+    height: 100%;
+}
+.testimonial-text {
+    letter-spacing: 0px;
+    margin:0;
+    font-size: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    color: var(--very-drak-grayish-blue);
+    line-height: 1.7rem;
+}
+.testimonial-client-name {
+    font-family: var(--fraunces-font);
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    color: var(--very-dark-desaturated-blue);
+}
+.testimonial-client-occupation {
+    font: {
+        family:var(--barlow-font);
+        size: 0.75rem;
+       
+    }
+    color: var(--grayish-blue);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-height: 41.66rem;
+    min-height: 20.88rem;
+    .image-grid-item {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.milk {
+    background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background-image: url(images/mobile/image-gallery-orange.jpg);
+}
+
+.cone {
+    background-image: url(images/mobile/image-gallery-cone.jpg);
+}
+
+.sugar {
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+
