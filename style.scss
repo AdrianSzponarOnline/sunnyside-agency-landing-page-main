@@ -65,6 +65,10 @@ nav {
 .menu-container {
     display: none;
 }
+.shown {
+    display: block;
+}
+  
 
 header h1{
     margin: 0;
@@ -280,20 +284,22 @@ main {
 }
 .testimonials {
     box-sizing: border-box;
-    padding: 3.8rem 1.25rem;
+    padding: 3.9rem 1.25rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 100%;
-    gap: 3rem;
+    gap: 2.7rem;
+    
 }
 .testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 1.8rem;
+    gap: 1.9rem;
 }
 .testimonials-title {
     margin:0;
@@ -360,6 +366,86 @@ main {
 .footer {
     background-color: var(--footer-bg);
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
+    gap: 5rem;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    .logo {
+        display: block;
+        scale: 1.4;
+        filter: brightness(0) saturate(100%) invert(31%) sepia(21%) saturate(860%) hue-rotate(116deg) brightness(125%) contrast(98%);
+    }
+    .attribution {
+        font-family: var(--barlow-font);
+        font-size: 0.8rem;
+        color: var(--dark-desaturated-cyan);
+        opacity: 0.7;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 2rem;
+
+        a {
+            text-decoration: none;
+            color: var(--dark-desaturated-cyan);
+            opacity: 1;
+        }
+    }
 }
+.footer-nav {
+    width: 100%;
+}
+.footer-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+.footer-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-menu-item a {
+    font-family: var(--barlow-font);
+    color: var(--dark-desaturated-cyan);
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.footer-menu-item a:hover,
+.footer-menu-item a:focus,
+.footer-menu-item a:active {
+            color: white;
+            
+}
+.contact {
+    display: none;
+}
+.footer-social-media {
+    width: 100%;
+}
+.footer-social-media-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.social-media-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.social-media-link img:hover {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(53%) saturate(269%) hue-rotate(295deg) brightness(117%) contrast(101%);
+}
+
+
+
