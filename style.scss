@@ -69,7 +69,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-@media (min-width:600px) {
+@media (min-width:1000px) {
     nav {
     padding: 2rem 3.1rem;
         .logo{
@@ -94,8 +94,6 @@ nav {
 .shown {
     display: flex;
 }
-
-  
 
 header h1{
     margin: 0;
@@ -197,6 +195,10 @@ header h1{
         padding: 1rem 1.5rem;
         font-weight: 700;
     }
+    .menu-item-cta:hover{
+        background-color: hsla(26, 100%, 99%, 0.205);
+        color: var(--white);
+    }
 }
 
 
@@ -228,14 +230,14 @@ main {
     width: 100%;
 }
 
-@media (min-width:600px) {
+@media (min-width:700px) {
     .transform-grid {
         display: grid;
         align-items: center;
         justify-items: center;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .transform-section-container {
         grid-template-columns: 1fr 1fr;
         grid-column: 1 / 3;
@@ -289,7 +291,6 @@ main {
 @media (min-width:600px) {
     .transform-description-container {
         box-sizing: border-box;
-        padding: 0;
         width: 70%;
         padding-left: 3rem;
         margin: auto;
@@ -298,9 +299,6 @@ main {
         text-align: left;
         overflow: hidden;
         gap: 2.2rem;
-    }
-    #slogan-2 .transform-description-container{
-        padding: 0;
     }
 }
 .transform-description-container h2{
@@ -637,6 +635,12 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
+@media (min-width:700px){
+    .footer-menu {
+        justify-content: center;
+        gap: 3rem;
+    }
+}
 .footer-menu-item a {
     font-family: var(--barlow-font);
     color: var(--dark-desaturated-cyan);
@@ -676,7 +680,6 @@ main {
     header {
         background-image: url("images/desktop/image-header.jpg");
     }
-
 }
 
 
